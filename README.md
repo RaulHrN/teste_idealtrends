@@ -8,3 +8,15 @@ Teste de habilidades tecnicas para a vaga de Analista Front End no grupo de empr
 - **CSS3**: Estilização da página.
 - **JavaScript**: Funcionalidade interativa.
 - **[SplideJS]**: Para funcionalidades de carrossel.
+
+## Setup
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/RaulHrN/teste_idealtrends
+
+2. Instale as dependências:
+   ```bash
+   npm install
+
+3. Inicie o servidor utilizando a extensão **Go Live** do VSCode
