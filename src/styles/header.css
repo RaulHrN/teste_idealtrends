@@ -1,0 +1,102 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-contact {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: #284B63;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+}
+
+#header-content {
+    width: 100%;
+    display: flex;
+    padding: 0.2rem 2rem;
+    justify-content: space-between;
+}
+
+#logo img {
+    height: 4rem;
+}
+
+.nav-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #353535;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#mobile-menu {
+    display: none;
+    /* Esconder em telas grandes */
+}
+
+/* Mobile queries */
+@media (max-width: 768px) {
+    header {
+        max-height: 7rem;
+    }
+
+    /* Exibir o ícone de hambúrguer em telas menores */
+    #mobile-menu {
+        cursor: pointer;
+        font-size: 2rem;
+        color: #353535;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+        padding: 1rem 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        background-color: #284B63;
+    }
+
+    /* Exibir o menu quando a classe "active" for aplicada */
+    nav.active {
+        display: flex;
+        position: absolute;
+        z-index: 99;
+        left: 0;
+        top: 7rem;
+        box-shadow: -2px 5px 20px 4px #00000070;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+    }
+}
